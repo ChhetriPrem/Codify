@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Left Navigation Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../components/profile_cards/czrd.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul class="nav-list">
+        <li class="nav-item active">
+          <!-- Set this as active if you want Section 1 to be default -->
+          <a href="#" data-target="section1">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <span class="notification-dot"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" data-target="home">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" data-target="section2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" data-target="section3">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="profile-section">
+        <img
+          class="profile-pic"
+          src="https://pics.craiyon.com/2023-11-26/oMNPpACzTtO5OVERUZwh3Q.webp"
+          alt="Profile"
+        />
+      </div>
+    </div>
+
+    <!-- Content sections to navigate to -->
+    <div id="home" class="section"></div>
+    <div id="section1" class="section">
+      <div id="course-display">
+        <div id="course-card-container"></div>
+      </div>
+    </div>
+    <div id="section2" class="section"></div>
+    <div id="section3" class="section">Section 3 Content</div>
+
+    <script type="module" src="../scripts/home.js"></script>
+  </body>
+</html>

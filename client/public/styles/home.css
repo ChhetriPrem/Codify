@@ -1,0 +1,99 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.sidebar {
+  background-color: #f1e8de;
+  width: 70px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 200px;
+}
+
+.nav-item {
+  margin: 20px 0;
+}
+
+.nav-item a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.nav-item a img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-item.active a {
+  background-color: pink;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff4d4d;
+  border-radius: 50%;
+}
+
+.profile-section {
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styles */
+.section {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  width: calc(100vw - 100px); /* Full width minus sidebar */
+  display: none;
+}
+
+/* Initially display home */
+#home {
+  display: block;
+}
+
+#course-card-container {
+  width: 100svw;
+  display: flex;
+}

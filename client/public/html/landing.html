@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codify</title>
+
+    <!-- Other head elements -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../styles/landing.css" />
+    <link rel="stylesheet" href="../components/toast/toast.css" />
+  </head>
+  <body>
+    <main>
+      <div id="landing-page-info">
+        <h1>Create an account as</h1>
+        <button class="landing-page-btn" id="student-btn">
+          <i class="fa-solid fa-graduation-cap"></i> Student
+        </button>
+        <button class="landing-page-btn" id="instructor-btn">
+          <i class="fa-solid fa-chalkboard-user"></i> Instructor
+        </button>
+
+        <br />
+
+        <p id="ques">Already have an account?</p>
+        <button id="login">Login</button>
+      </div>
+
+      <!-- <---signup --- student  -->
+      <div id="student-signup-page">
+        <div class="signup-form" id="student-signup-form">
+          <h2>Student Sign Up</h2>
+          <input type="file" id="myFile" name="filename" />
+          <input type="text" id="rs-name" placeholder="Full name" />
+          <input type="email" id="rs-email" placeholder="Email" />
+          <input type="text" id="rs-password" placeholder="Password" />
+          <button id="submit-student">Sign UP</button>
+        </div>
+      </div>
+
+      <!-- signup isntructor  -->
+      <div id="instructor-signup-page">
+        <div class="signup-form" id="instructor-signup-form">
+          <h2>Instructor Sign Up</h2>
+          <input type="text" id="ri-name" placeholder="Full name" />
+          <input type="email" id="ri-email" placeholder="Email" />
+          <input type="text" id="ri-password" placeholder="Password" />
+          <button id="submit-instructor">Sign UP</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- test -->
+
+    <!-- create course  -->
+    <!-- add piture, title, description,price, image, -->
+    <input type="text" placeholder="picture" />
+    <input type="text" placeholder="title" />
+    <input type="text" placeholder="description" />
+    <input type="number" placeholder="price" />
+
+    <!-- test-end  -->
+
+    <ul class="notifications-container"></ul>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script type="module" src="./../scripts/landing.js"></script>
+  </body>
+</html>

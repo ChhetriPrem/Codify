@@ -1,0 +1,57 @@
+#landing-page-info,
+#student-signup-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100svh;
+}
+main {
+  text-align: center;
+}
+button {
+  padding: 17px 0;
+  min-width: 170px;
+  border-radius: 3px;
+
+  font-weight: 600;
+}
+
+button:nth-child(odd) {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+#student-signup-page,
+#instructor-signup-page {
+  display: none;
+}
+
+/* general form section  */
+
+input {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/* signup as student section  */
+#instructor-btn,
+#student-btn {
+  position: relative;
+}
+
+#ques {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+#login {
+  padding: 10px;
+  min-width: 40px;
+  border-radius: 5px;
+  background-color: white;
+}

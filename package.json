@@ -1,0 +1,19 @@
+{
+  "name": "coursera",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "![Course Selling App]",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0"
+  }
+}
